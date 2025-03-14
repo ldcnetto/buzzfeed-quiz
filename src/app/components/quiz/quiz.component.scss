@@ -1,0 +1,138 @@
+.main-quiz{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.quiz-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+
+.quiz-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.quiz-questions{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  max-width: 800px;
+  border:2px solid #4d6bfe;
+  border-radius: 8px;
+  background-color: rgba(77, 107, 254, 0.4);
+  margin-bottom: 20px;
+}
+
+.quiz-options{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: auto auto 20px;
+}
+
+.btn-option{
+  background-color: rgba(77, 107, 254, 0.4);
+  border-radius: 8px;
+  border: 2px solid #4d6bfe;
+  max-width: 100%;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #4d6bfe;
+}
+
+.btn-option:hover{
+  background-color: #4d6bfe;
+}
+
+.btn-option:active{
+  position: relative;
+  top:1px;
+}
+
+.quiz-progress-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.quiz-results{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  background-color: #4d6bfe;
+  border-radius: 10px;
+  padding: 60px 30px;
+}
+
+.quiz-results > h2{
+  text-align: center;
+}
+
+.quiz-progress {
+  width: 50%;
+  max-width: 800px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid #e0e0e0;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  .progress-bar {
+    height: 100%;
+    background-color: #4d6bfe;
+    transition: width 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 670px){
+  .layout {
+    padding: 0 20px;
+  }
+
+  .quiz-results{
+    padding: 30px 30px;
+  }
+
+  .quiz-logo{
+    max-width: 300px;
+  }
+
+  .quiz-progress {
+    width: 80%;
+  }
+
+}
